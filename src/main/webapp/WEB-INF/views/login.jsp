@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h2>Login Form</h2>
-        <form method="post" action="/welcome">
+        <form method="post" action="UserLoginController">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" class="form-control" required>
@@ -21,7 +21,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
-        <p class="text-center mt-3">New user? <a href="/registration">Register here</a></p>
+        <p class="text-center mt-3">New user? <a href="/register">Register here</a></p>
         <p th:if="${errorMessage}" style="color:red;" th:text="${errorMessage}"></p>
     </div>
 </body>
