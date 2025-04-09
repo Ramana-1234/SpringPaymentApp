@@ -10,7 +10,8 @@
 <body>
     <div class="container">
         <h2>Login Form</h2>
-        <form method="post" action="UserLoginController">
+   
+        <form method="post" action="loginForm">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" class="form-control" required>
@@ -21,8 +22,15 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
+        
+	            <c:if test="${not empty errorMessage}">
+	    <div class="error">
+	        <p style='color:red'>${errorMessage}</p>
+	    </div>
+	</c:if>
         <p class="text-center mt-3">New user? <a href="/register">Register here</a></p>
-        <p th:if="${errorMessage}" style="color:red;" th:text="${errorMessage}"></p>
-    </div>
+        
+    
+       
 </body>
 </html>

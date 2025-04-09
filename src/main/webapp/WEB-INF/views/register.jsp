@@ -8,15 +8,16 @@
 </head>
 <body>
 	<h1>Registration</h1>		<form action="/registerUser" method="post">
-    <input type="text" name="username" placeholder="Username" required/>
-    <input type="password" name="password" placeholder="Password" required/>
-    <input type="text" name="firstname" placeholder="First Name" required/>
-    <input type="text" name="lastname" placeholder="Last Name" required/>
-    <input type="text" name="phone" placeholder="Phone" required/>
-    <input type="email" name="email" placeholder="Email" required/>
-    <input type="text" name="address" placeholder="Address" required/>
+    <input type="text" name="username" placeholder="Username" required/><br>
+    <input type="password" name="password" placeholder="Password" required/><br>
+    <input type="text" name="firstname" placeholder="First Name" required/><br>
+    <input type="text" name="lastname" placeholder="Last Name" required/><br>
+    <input type="text" name="phone" placeholder="Phone" required/><br>
+    <input type="email" name="email" placeholder="Email" required/><br>
+    <input type="text" name="address" placeholder="Address" required/><br>
     <button type="submit">Register</button>
-</form>
+</form><br><br>
+	<a href="login.jsp">Login</a>
 		
     
 </body>
