@@ -17,7 +17,7 @@
     <input type="text" name="address" placeholder="Address" required/><br>
     <button type="submit">Register</button>
 </form><br><br>
-	<a href="login.jsp">Login</a>
+	<a href="login">Login</a>
 		
     
 </body>
