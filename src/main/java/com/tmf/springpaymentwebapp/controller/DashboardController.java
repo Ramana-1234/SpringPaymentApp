@@ -18,11 +18,11 @@ public class DashboardController {
 	@PostMapping("/addBankAccount")
 	public String showAddBankAccountPage() {
 			System.out.println("Add bank accont");
-		return "addBankAccont";
+		return "addBankAccount";
 	}
 	@PostMapping("/detailedStatement")
 	public String showdetailedStatement() {
 			System.out.println("Detailed statement");
-		return "statement";
+		return "transactions";
 	}
 }
